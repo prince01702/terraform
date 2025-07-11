@@ -24,8 +24,6 @@ resource "aws_subnet" "prv" {
     cidr_block = "10.0.2.0/24"
     vpc_id = aws_vpc.name.id
     availability_zone = "us-central-1"
-    tags = {
-      name = "private-subnet"
     }
 }
 #internet gatway
