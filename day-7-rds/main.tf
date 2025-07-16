@@ -1,12 +1,12 @@
 resource "aws_db_instance" "rds" {
-    identifier = "my_db_rds"
+    identifier = "my-db-rds"
     allocated_storage = 10
     engine = "mysql"  
-  engine_version = "8.0"
-  instance_class = "db.t2.micro"
+  engine_version = "8.0.42"
+  instance_class = "db.t3.micro"
   db_name = "mydb_rds"
   username = "admin"
-  password = "rds123"
+  password = "rds123456789"
   db_subnet_group_name =aws_db_subnet_group.subnet_group.name
   skip_final_snapshot = true
   
