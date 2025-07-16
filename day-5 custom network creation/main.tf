@@ -91,5 +91,12 @@ resource "aws_route_table_association" "prv-asso" {
     route_table_id = aws_route_table.prv-rt.id
 
     }    
+
+
+
+    #ec2 creation
+    resource "aws_ec2" "name" {
+      
+    }
 #security
 # group
