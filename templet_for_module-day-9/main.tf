@@ -1,6 +1,6 @@
 resource "aws_instance" "name" {
-    ami = ""
-    instance_type = ""
-    key_name = ""
-    availability_zone = ""
+    ami = var.ami
+    instance_type = var.instance_type
+    key_name = var.key
+    availability_zone = var.az
 }
